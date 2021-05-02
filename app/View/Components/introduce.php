@@ -4,19 +4,18 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class navbar extends Component
+class introduce extends Component
 {
-    public $navbar , $navbarModel;
+    public $gioiThieu;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($navbar,$navbarModel)
+    public function __construct($gioiThieu)
     {
         //
-        $this->navbar = $navbar;
-        $this->navbarModel = $navbarModel;
+        $this->gioiThieu = $gioiThieu;
     }
 
     /**
@@ -26,6 +25,6 @@ class navbar extends Component
      */
     public function render()
     {
-        return view('components.navbar');
+        return view('components.introduce');
     }
 }

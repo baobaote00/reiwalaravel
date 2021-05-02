@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{!! $result['title'] !!}</title>
+    <title>{!! $title !!}</title>
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
@@ -482,8 +482,15 @@
 </head>
 
 <body class="antialiased">
-    <x-header :result="$result"/>
+    <x-header :contact="$contact"/>
+    <x-navbar :navbar="$navbar" :navbarModel="$navbarModel"/>
+    <x-slide_show :banner="$banner"/>
+    <x-introduce :gioiThieu="$gioiThieu"/>
+    <x-product :product="$theme"/>
+    <x-dau_an :productNew="$productNew" :category="$category"/>
     <x-test />
+    <script src="{!!asset('js/myjs/index.js')!!}"></script>
+    <script src="{!!asset('js/bootstrap.min.js')!!}"></script>
 </body>
 
 </html>

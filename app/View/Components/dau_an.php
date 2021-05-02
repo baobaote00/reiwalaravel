@@ -4,19 +4,19 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class navbar extends Component
+class dau_an extends Component
 {
-    public $navbar , $navbarModel;
+    public $productNew,$category;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($navbar,$navbarModel)
+    public function __construct($productNew,$category)
     {
         //
-        $this->navbar = $navbar;
-        $this->navbarModel = $navbarModel;
+        $this->productNew =$productNew;
+        $this->category = $category;
     }
 
     /**
@@ -26,6 +26,6 @@ class navbar extends Component
      */
     public function render()
     {
-        return view('components.navbar');
+        return view('components.dau_an');
     }
 }

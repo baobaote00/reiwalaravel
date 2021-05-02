@@ -6,16 +6,16 @@ use Illuminate\View\Component;
 
 class header extends Component
 {
-    public $result;
+    public $contact;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($result)
+    public function __construct($contact)
     {
         //
-        $this->result = $result;
+        $this->contact = $contact;
     }
 
     /**

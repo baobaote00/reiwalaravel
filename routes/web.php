@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/index/{type}', [IndexController::class, 'index']);
+Route::get('/{type}', [IndexController::class, 'lienHe']);
